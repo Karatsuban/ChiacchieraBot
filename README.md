@@ -8,7 +8,9 @@ This project uses the following packages and library :
 
 -swda (https://github.com/cgpotts/swda)
 -tkinter
+
 -typing
+
 -allennlp
 
 # How to use

@@ -19,13 +19,19 @@ This project uses the following packages and library :
 ## Train the model
 
 -Make sure that AllenNLP and all its dependencies have been properly installed. You can refer to this page https://pypi.org/project/allennlp/ for all information.
--Execute the Beautify.py with the command :
+
+-Execute the Beautify.py with the command : 
 $ python Beautify.py
+
 -Copy the file "output.tsv" and paste it in the folder "nla_semparse/data" (from the code cloned from the allennlp-guide repo)
+
 -Copy the "seq2seq_config.json" file provided in the folder "nla_semparse/training_config"
+
 -Finally, execute the command :
+
 $ allennlp train training_config/seq2seq_config.json -s DEST_FOLDER --include-package allennlp_models --include-package nla_semparse
-Replacing DEST_FOLDER by a folder of your choice
+
+Replacing DEST_FOLDER by a folder of your choice. 
 The generated model will be stored at this location under the name "model.tar.gz"
 
 ## Evaluate the model (chat with the bot)
